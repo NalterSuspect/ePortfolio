@@ -1,0 +1,119 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ul{list-style-type: none}
+a{text-decoration: none;color: white;}
+
+:root{
+  --light:#C2FEF6;
+  --dark:#111716;
+}
+
+@font-face {
+  font-family: 'megafont';
+  src: url(../font/Megafont.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'stray';
+  src: url(../font/stray.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'orbitron';
+  src: url(../font/Orbitron-Black.ttf) format('truetype');
+  src: url(../font/Orbitron-Bold.ttf) format('truetype');
+  src: url(../font/Orbitron-Medium.ttf) format('truetype');
+  src: url(../font/Orbitron-Regular.ttf) format('truetype');
+}
+
+body{
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
+  font-family: 'orbitron';
+  position: relative;
+}
+
+header{
+  grid-area: navbar;
+  position: sticky;
+  top: 0;
+}
+
+aside{
+  grid-area: sidebar;
+  position: sticky;
+  top: 64px;
+  align-self: start;
+  height: calc(100vh - 64px);
+}
+
+main{
+  grid-area: main;
+  width: 100%;
+  height: 100vh;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.project-grid{
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "navbar navbar" "sidebar main" "sidebar footer";
+}
+
+.font-1{
+  font-family: 'megafont' !important;
+}
+
+.font-2{
+  font-family: 'orbitron' !important;
+}
+
+.font-3{
+  font-family: 'stray' !important;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mynavbar{
+  background-color: rgba(0, 0, 0,0.2);
+}
+
+.mynavbar a{
+  padding: 16px 20px;
+  border-radius: 4px;
+}
+.jumper{
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease;
+  margin-left: 45px;
+  padding-left: 1px;
+}
+.jumper::before{
+  content: '';
+  background-color: white;
+  width: 15px;
+  height: 1px;
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+.jumper:hover{
+  transform: scale(1.2);
+  padding-left: 20px;
+}
+
+.jumper:hover::before{
+  transform: scale(1.2);
+  width: 40px;
+}
