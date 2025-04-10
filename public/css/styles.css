@@ -43,13 +43,11 @@ aside{
   position: sticky;
   top: 64px;
   align-self: start;
-  height: calc(100vh - 64px);
 }
 
 main{
   grid-area: main;
   width: 100%;
-  height: 100vh;
 }
 
 footer{
@@ -91,11 +89,12 @@ footer{
   border-radius: 4px;
 }
 .jumper{
+  display: inline-block;
   cursor: pointer;
   position: relative;
-  transition: all 0.1s ease;
   margin-left: 45px;
   padding-left: 1px;
+  transition: transform 0.5s ease;
 }
 .jumper::before{
   content: '';
@@ -103,17 +102,60 @@ footer{
   width: 15px;
   height: 1px;
   position: absolute;
-  left: -18px;
+  left: -15px;
   top: 10px;
-  transition: all 0.2s ease;
+  transition: width 0.5s ease, left 0.5s ease;
 }
 
-.jumper:hover{
-  transform: scale(1.2);
-  padding-left: 20px;
+.jumper-trigger{
+  
 }
 
-.jumper:hover::before{
-  transform: scale(1.2);
-  width: 40px;
+.jumper-trigger:hover{
+  .jumper::before{
+    width: 35px;
+    left: -35px;
+  }
+  .jumper{
+    transform: translateX(20px);
+  }
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+.gallery-photo{
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: minmax(0,1fr);
+}
+
+.gallery-photo img{
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.frame-photo-text{
+  position: relative;
+}
+
+.frame-photo-text img:hover{
+  opacity: 0.4;
+}
+
+.frame-photo-text img{
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.frame-photo-text div{
+  position: absolute;
+}
+
+.project h2{
+  margin-top: 35px;
 }
