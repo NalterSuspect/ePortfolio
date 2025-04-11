@@ -5,6 +5,7 @@ a{text-decoration: none;color: white;}
 :root{
   --light:#C2FEF6;
   --dark:#111716;
+  --highlight:#4493f8;
 }
 
 @font-face {
@@ -162,4 +163,15 @@ footer{
 
 p{
   max-width: 50ch;
+}
+
+.link{
+  color: var(--highlight) !important;
+  text-decoration: underline;
+}
+
+.link::after{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: ' \f0c1';
 }
