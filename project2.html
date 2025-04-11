@@ -23,7 +23,7 @@
             <span class="jumper">Photos</span>
         </div>
         <div class="jumper-trigger w-100 p-3" onclick="jumpTo('conclusion')">
-            <span class="jumper">Recentements</span>
+            <span class="jumper">Points Techniques</span>
         </div>
     </aside>
     <main class="container project">
@@ -34,18 +34,10 @@
         <div class="fs-4 d-flex flex-column gap-4">
             <div class="row">
                 <div class="col">
-                    <span>Contexte</span>
-                </div>
-                <div class="col">
-                    <span class="text-white">2025</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
                     <span>Technologie</span>
                 </div>
                 <div class="col">
-                    <span class="text-white">2025</span>
+                    <span class="text-white">Node Js - Express js - Jade - Sqlite - Spotify Api</span>
                 </div>
             </div>
             <div class="row">
@@ -53,7 +45,7 @@
                     <span>Année</span>
                 </div>
                 <div class="col">
-                    <span class="text-white">2025</span>
+                    <span class="text-white">déc 2025</span>
                 </div>
             </div>
             <div class="row">
@@ -64,17 +56,44 @@
                     <span class="text-white clickable" onclick="openWindowWithUrl('https://github.com/NalterSuspect/Nodify')">lien</span>
                 </div>
             </div>
-            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At aliquam cumque voluptates ducimus obcaecati beatae veniam pariatur, aspernatur doloribus omnis aperiam natus fugiat exercitationem iure nobis, facilis est? Rerum, iusto!</p>
+            <p class="text-white">
+                Nodify est une application web qui explore les limites de l'API de Spotify. 
+                L'idée de ce projet était de pouvoir exploiter mes données liées à mon compte Spotify et d'afficher en détail les résultats.
+            </p>
+            <p class="text-white">
+                Au cours du temps, ce concept a évolué vers un réseau social où les utilisateurs pourraient partager leurs profils et leurs intérêts musicaux.
+            </p>
+            <p>
+                <i class="fa-solid fa-circle-exclamation"></i> Nodify est un projet découvert de Node et express js.
+            </p>
         </div>
         <h2 id="photos" class="border-bottom font-1 mb-4">Photos</h2>
         <div class="gallery-photo">
             <img src="/public/img/nodify/1.png" alt="">
+            <img src="/public/img/nodify/1a.png" alt="">
             <img src="/public/img/nodify/2.png" alt="">
             <img src="/public/img/nodify/3.png" alt="">
             <img src="/public/img/nodify/4.png" alt="">
         </div>
-        <h2 id="conclusion" class="border-bottom font-1 mb-4">Ressentiment</h2>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, accusamus minus sunt reprehenderit cum vero voluptatem molestiae ut explicabo facilis libero dolores eveniet architecto dignissimos cupiditate molestias, numquam repellat in, consectetur odit. Optio iste possimus, delectus temporibus neque ipsum voluptate? Debitis, velit magnam vitae sequi a id delectus totam.</p>
+        <h2 id="conclusion" class="border-bottom font-1 mb-4">Points Techniques</h2>
+        <div class="fs-4">
+            <p class="text-white">
+                Pour pouvoir se connecter à l'application, il faut d'abord se enregistrer et lier son compte Spotify. 
+                Nodify passe par le système sécurisé d'authentification de Spotify.
+            </p>
+            <p class="text-white">
+                Une fois la connexion réussie, Nodify charge le profil de Spotify.
+            </p>
+
+            <p class="text-white">
+                Nodify permet de calculer les temps d'écoute et le nombre de fois que l'on écoute une chanson (streams). 
+                De plus, il calcule les top Artist, top Album et top Track.
+            </p>
+
+            <p class="text-white">
+                Certaines fonctionnalités n'ont pas été finies telles que le système de filtrage par mois, semaine ou année.
+            </p>
+        </div>
     </main>
     <footer></footer>
 </body>
