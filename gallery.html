@@ -18,24 +18,32 @@
     <main class="container">
         <div class="row mt-5">
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                <div class="row h-100">
-                    <img src="public/img/unsustainable.gif" alt="" class="h-100">
+                <div class="row h-100 image-holder">
+                    <img id="img-1" src="public/img/keyduino/main.png" alt="" class="" style="z-index: 0;">
+                    <img id="img-2" src="public/img/nodify/main.png" alt="" class="" style="z-index: -1;">
+                    <img id="img-3" src="public/img/pokeclicker/main.png" alt="" class="" style="z-index: -2;">
                 </div>
             </div>
             <div class="col">
                 <div class="row">
                     <h2 class="font-1">Projets</h2>
-                    <div class="d-flex justify-content-between border-top text-white align-items-center py-2 fs-4 clickable" onclick="getProject(1)">
-                        <span>Minimalist Piano</span>
-                        <span>Node Js</span>
+                    <div class="border-top magnify-hover">
+                        <div onmouseover="highlightProject(1)" class="d-flex justify-content-between text-white align-items-center py-2 fs-4 clickable" onclick="getProject(1)">
+                            <span>Minimalist Piano</span>
+                            <span>Node Js</span>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-top text-white align-items-center py-2 fs-4 clickable" onclick="getProject(2)">
-                        <span>Nodify</span>
-                        <span>Node Js</span>
+                    <div class="border-top magnify-hover">
+                        <div onmouseover="highlightProject(2)" class="d-flex justify-content-between text-white align-items-center py-2 fs-4 clickable" onclick="getProject(2)">
+                            <span>Nodify</span>
+                            <span>Node Js</span>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-between border-top text-white align-items-center py-2 fs-4 clickable" onclick="getProject(3)">
-                        <span>Poke Clicker</span>
-                        <span>Symfony</span>
+                    <div class="border-top magnify-hover">
+                        <div onmouseover="highlightProject(3)" class="d-flex justify-content-between  text-white align-items-center py-2 fs-4 clickable" onclick="getProject(3)">
+                            <span>Poke Clicker</span>
+                            <span>Symfony</span>
+                        </div>
                     </div>
                 </div>
             </div>
