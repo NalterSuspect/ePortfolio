@@ -23,7 +23,7 @@
             <span class="jumper">Photos</span>
         </div>
         <div class="jumper-trigger w-100 p-3" onclick="jumpTo('conclusion')">
-            <span class="jumper">Recentements</span>
+            <span class="jumper">Points Techniques</span>
         </div>
     </aside>
     <main class="container project">
@@ -34,18 +34,10 @@
         <div class="fs-4 d-flex flex-column gap-4">
             <div class="row">
                 <div class="col">
-                    <span>Contexte</span>
-                </div>
-                <div class="col">
-                    <span class="text-white">2025</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
                     <span>Technologie</span>
                 </div>
                 <div class="col">
-                    <span class="text-white">2025</span>
+                    <span class="text-white">Arduino - Express Js - Twig - Sqlite</span>
                 </div>
             </div>
             <div class="row">
@@ -53,7 +45,7 @@
                     <span>Année</span>
                 </div>
                 <div class="col">
-                    <span class="text-white">2025</span>
+                    <span class="text-white">Jav 2025</span>
                 </div>
             </div>
             <div class="row">
@@ -64,7 +56,17 @@
                     <span class="text-white clickable" onclick="openWindowWithUrl('https://github.com/NalterSuspect/Keyduino')">Lien</span>
                 </div>
             </div>
-            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At aliquam cumque voluptates ducimus obcaecati beatae veniam pariatur, aspernatur doloribus omnis aperiam natus fugiat exercitationem iure nobis, facilis est? Rerum, iusto!</p>
+            <div>
+                <p class="text-white">
+                    Le projet Minimalistic Piano consiste à concevoir un piano en utilisant un microcontrôleur, des boutons et une enseinte. En addition, ce dispositif doit être relié avec une interface web par moyen d’un websocket.
+                </p>
+                <p class="text-white">
+                    Au cours du temps, ce concept a évolué vers un réseau social où les utilisateurs pourraient partager leurs profils et leurs intérêts musicaux.
+                </p>
+                <p>
+                    <i class="fa-solid fa-circle-exclamation"></i> Cette application est en cours de développement.
+                </p>
+            </div>
         </div>
         <h2 id="photos" class="border-bottom font-1 mb-4">Photos</h2>
         <div class="gallery-photo">
@@ -73,8 +75,29 @@
             <img src="/public/img/keyduino/1.jpg" alt="">
             <img src="/public/img/keyduino/2.jpg" alt="">
         </div>
-        <h2 id="conclusion" class="border-bottom font-1 mb-4">Ressentiment</h2>
-        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum debitis, accusamus minus sunt reprehenderit cum vero voluptatem molestiae ut explicabo facilis libero dolores eveniet architecto dignissimos cupiditate molestias, numquam repellat in, consectetur odit. Optio iste possimus, delectus temporibus neque ipsum voluptate? Debitis, velit magnam vitae sequi a id delectus totam.</p>
+        <h2 id="conclusion" class="border-bottom font-1 mb-4">Points Techniques</h2>
+        <div class="fs-4">
+            <p class="text-white">
+                Minimalistic Piano offre des contrôles tels que le volume, la modulation (Pitch). De plus, un Oscilloscope pour afficher l'amplitude de l’onde du son émis par le piano.
+            </p>
+
+            <p class="text-white">
+                Un clavier de 7 notes. 
+            </p>
+
+            <p class="text-white">
+                L'application utilise un Websocket comme moyen de communication entre le microcontrôleur et l'interface web. Cette technologie permet une interaction en temps réel.
+            </p>
+
+            <p class="text-white">
+                Le piano arduino permet de jouer des notes musicales de la gamme majeure ( Do Re Mi Fa Sol La Si).
+                De plus, il est possible d'affecter le pitch de chaque note avec un potentiomètre jusqu'à une octave plus haute.
+            </p>
+
+            <p class="text-white">
+                En outre, il est possible de jouer avec des présents de son (Octaver Arpeggio). Les effets peuvent être activés seulement sur l'interface web.
+            </p>
+        </div>
     </main>
     <footer></footer>
 </body>
