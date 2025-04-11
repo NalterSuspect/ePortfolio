@@ -159,3 +159,7 @@ footer{
 .project h2{
   margin-top: 35px;
 }
+
+p{
+  max-width: 50ch;
+}
